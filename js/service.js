@@ -2,7 +2,7 @@ import { BASE_URL, API_KEY } from "./constants.js";
 
 export async function getWeather(query) {
     const response = await fetch(
-        `${BASE_URL}forecast.json?key=${API_KEY}&q=${query}&days=7&aqi=no`
+        `${BASE_URL}forecast.json?key=${API_KEY}&q=${query}&days=7&aqi=yes&alerts=no`
     );
 
     if (!response.ok) {
